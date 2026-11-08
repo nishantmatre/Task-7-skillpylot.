@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillPilots | Career Guidance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">S</span> skillpilots<sup>®</sup></div>
+    <a class="nav-link"><span>⌂</span> Dashboard</a>
+    <div class="nav-label">PAGES</div>
+    <a class="nav-link"><span>◉</span> Self Assessment</a>
+    <a class="nav-link"><span>▥</span> College Assessment</a>
+    <a class="nav-link"><span>▣</span> Skill Assessment</a>
+    <a class="nav-link active"><span>⌘</span> Career Path</a>
+    <a class="nav-link"><span>♙</span> Mentor Connect</a>
+    <a class="nav-link"><span>♧</span> Mock Interview</a>
+    <a class="nav-link"><span>▤</span> Learning Materials</a>
+    <a class="nav-link"><span>◎</span> Opportunities</a>
+    <a class="nav-link"><span>▰</span> Resume</a>
+    <a class="nav-link"><span>▣</span> Applied Opportunities</a>
+    <a class="nav-link"><span>♟</span> Problem Statements</a>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-brand">skillpilots</div>
+      <div class="top-actions">
+        <button class="icon-button" aria-label="Toggle theme" id="themeToggle">☾</button>
+        <button class="icon-button" aria-label="Notifications">♧<small>9+</small></button>
+        <button class="icon-button" aria-label="Documents">▢</button>
+        <div class="avatar">SP</div>
+      </div>
+    </header>
+
+    <section class="welcome-grid">
+      <article class="panel inspiration">
+        <div class="eyebrow">✦ DAILY INSPIRATION</div>
+        <div class="quote-icon">📈</div>
+        <div><strong>"Small daily improvements lead to staggering long-term results."</strong><p>— Robin Sharma</p></div>
+      </article>
+      <article class="panel impact">
+        <div class="eyebrow">✦ TODAY'S IMPACT</div>
+        <h3>Complete 1 remaining task to boost your profile from <b>65% → 67%</b></h3>
+        <p>✨ +2% profile growth potential today</p>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel schedule">
+        <div class="section-heading"><h2>▣ Learning Schedule</h2><span class="level">Beginner</span></div>
+        <div class="legend"><span><i class="done-dot"></i> Done</span><span><i class="today-dot"></i> Today</span><span><i class="upcoming-dot"></i> Upcoming</span></div>
+        <div class="days">
+          <div class="day done"><small>DAY</small><b>12</b><em>+3.8%</em></div>
+          <div class="day done"><small>DAY</small><b>13</b><em>+4.1%</em></div>
+          <div class="day today"><small>TODAY</small><b>14</b><em>+4.6%</em></div>
+          <div class="day"><small>DAY</small><b>15</b><em>+4.2%</em></div>
+          <div class="day"><small>DAY</small><b>16</b><em>+4.8%</em></div>
+          <div class="day"><small>DAY</small><b>17</b><em>+4.9%</em></div>
+          <div class="day"><small>DAY</small><b>18</b><em>+4.2%</em></div>
+          <div class="day"><small>DAY</small><b>19</b><em>+4.5%</em></div>
+          <div class="day"><small>DAY</small><b>20</b><em>+4.7%</em></div>
+          <div class="day"><small>DAY</small><b>21</b><em>+5.4%</em></div>
+        </div>
+      </article>
+
+      <article class="panel focus">
+        <div class="focus-title"><div><span class="calendar">▣</span><h2>Today's Focus: CSS Flexbox Layout</h2><p>Day 14 • 4 tasks</p></div></div>
+        <div class="task completed"><div><span class="task-type">Video</span><h3>CSS Flexbox (Step-by-Step CSS)</h3><p>Learn the fundamentals of flexible layouts.</p></div><span class="status">✓ Completed</span></div>
+        <div class="task completed"><div><span class="task-type">Practice</span><h3>Grid, Flexbox &amp; More (1:17:25)</h3><p>Practice responsive layout concepts.</p></div><span class="status">✓ Completed</span></div>
+        <div class="task completed"><div><span class="task-type">Reading</span><h3>CSS Column Layout</h3><p>Review layout techniques and examples.</p></div><span class="status">✓ Completed</span></div>
+        <div class="task project">
+          <div class="task-head"><span class="task-type">Project</span><span class="tag">Responsive UI</span></div>
+          <h3>Task 4: Redesign the notes page so that each note appears as a card in a responsive Flexbox grid.</h3>
+          <div class="tags"><span>Responsive UI</span><span>Flexbox cards</span></div>
+          <div class="task-actions"><button class="steps-btn" id="openSteps">Steps</button><button class="submit-btn" id="submitProject">🚀 Submit Project</button></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="stepsModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-heading"><span class="info-icon">i</span><h2 id="modalTitle">Task Implementation Steps</h2></div>
+      <p class="task-description">Redesign the notes page so that each note appears as a card in a responsive Flexbox grid.</p>
+      <ol class="steps-list">
+        <li><span>1</span>Wrap each note <code>&lt;li&gt;</code> in a <code>&lt;div class="card"&gt;</code> element.</li>
+        <li><span>2</span>Set the parent container to <code>display: flex; flex-wrap: wrap;</code> with <code>gap</code>.</li>
+        <li><span>3</span>Define card width (e.g., 300px) and add padding, border, and shadow.</li>
+        <li><span>4</span>Add media query to stack cards on narrow screens.</li>
+      </ol>
+      <button class="review-btn" id="reviewSteps">I've Reviewed the Steps</button>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
